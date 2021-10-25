@@ -2,18 +2,24 @@
 
 Phase 1:
 
-Shall set-up the Raspberry Pi and configure it for the project 
+o Shall set-up the Raspberry Pi and configure it for the project
 
-Shall demonstrate basic understanding of Python coding 
+o Shall install Raspbian OS
 
-Create simple unit conversion program 
+o Shall enable SPI and I2C I/O
 
-Shall demonstrate basic understanding of Raspberry Pi I/O 
+o Shall install and setup SW tools
 
-Configure LED on breadboard o Blink LED 
+o Shall demonstrate basic understanding of Python coding 
 
-Shall demonstrate basic understanding of Pygame 
+o Create simple unit conversion program 
 
-Add a random rectangle to the center of the game screen o Add random ball to the top-left corner of the game screen 
+o Shall demonstrate basic understanding of Raspberry Pi I/O 
 
-Add text to the top-right of the game screen
+o Configure LED on breadboard o Blink LED 
+
+o Shall demonstrate basic understanding of Pygame 
+
+o Add a random rectangle to the center of the game screen o Add random ball to the top-left corner of the game screen 
+
+o Add text to the top-right of the game screen
