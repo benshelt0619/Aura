@@ -12,14 +12,16 @@ o Shall install and setup SW tools
 
 o Shall demonstrate basic understanding of Python coding 
 
-o Create simple unit conversion program 
+  - Create simple unit conversion program (Feet to Miles, Minutes to Days, Miles to Kilometer)
 
 o Shall demonstrate basic understanding of Raspberry Pi I/O 
 
-o Configure LED on breadboard o Blink LED 
+  - Configure LED on breadboard 
+  - Blink LED (Once every second)
+  - What color, what GPIO pin, what resistor? (Blue, Pin GPI026, 220 ohms)
 
 o Shall demonstrate basic understanding of Pygame 
 
-o Add a random rectangle to the center of the game screen o Add random ball to the top-left corner of the game screen 
-
-o Add text to the top-right of the game screen
+  - Add a random rectangle to the center of the game screen (800px x 400px, white)
+  - Add random ball to the top-left corner of the game screen (20px, white)
+  - Add text to the top-right of the game screen (12px, white, arial)
