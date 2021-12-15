@@ -1,53 +1,55 @@
-"""
- Milestone C - Software Design and Integration
- 
- Lesson 0:
- Blank Pygame Template with Raspberry Pi GPIO
- 
-"""
- 
-import pygame
+#CONVERSION PROGRAM
 
-#import RPi.GPIO as GPIO
-import time
+decision=input("What would you like to convert? (Temp / Distance / Weight): ")
+if decision == "Temp":
+    unit = input("What unit would you like to convert from? (c / f): ")
+    if unit == "f":
+      f = int(input("Enter temperature in Fahrenheit: "))
+      c = (f - 32)*.556
+      print(c,"degrees Celsius")
+    elif unit == "c":
+      c = int(input("Enter temperature in Celsius: "))
+      f = (c*1.8)+32
+      print(f,"degrees Fahrenheit")
+        
+elif decision == "Distance":
+  unit = input("What unit would you like to convert from? (km / miles): ")
+  if unit == "km":
+    km = int(input("Enter # of km: "))
+    miles = km * .609
+    print(miles,"miles")
+  elif unit == "miles":
+    miles = int(input("Enter # of miles: "))
+    km = miles * 1.609
+    print(km,"kilometers")
  
-# Definitions
-
-
-# Initialize Pygame
-pygame.init()
- 
-# Set the width and height of the screen [width, height]
-size = (600, 480)
-screen = pygame.display.set_mode(size)
-pygame.display.set_caption("My Game")
- 
-# Set main loop complete
-complete = False
- 
-# Set the speed of loops
-clock = pygame.time.Clock()
- 
-# -------- Main Program Loop -----------
-while not complete:
-    # -- Main event loop
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            complete = True
- 
-    # - Add game logic should go here
- 
-    # - Screen clearing code goes here
-    screen.fill((0,0,0))
-
-    # - Draw objects on the screen
     
-     
-    # - Update the screen with our drawing
-    pygame.display.flip()
-
-    # Set frame rate
-    clock.tick(30)
+elif decision == "Weight":
+  unit=input("What unit would you like to convert from? (lbs / ounces): ")
+  if unit == "lbs":
+    lbs = int(input("Enter # of pounds: "))
+    ounces = lbs * 16
+    print(ounces,"ounces")
+  elif unit == "ounces":
+    ounces = int(input("Enter # of ounces: "))
+    lbs = ounces / 16
+    print(lbs,"pounds")
+    
+    
+    
+#BLINKING LED
  
-# Close the window and quit.
-pygame.quit()
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+GPIO.setup(19,GPIO.OUT)
+for x in range(10):
+    time.sleep(1)
+    GPIO.output(19,GPIO.HIGH)
+    time.sleep(1)
+    GPIO.output(19,GPIO.LOW)
+    
+    
+
+#Pygame example
