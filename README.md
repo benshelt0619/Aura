@@ -12,13 +12,13 @@ o Shall install and setup SW tools
 
 o Shall demonstrate basic understanding of Python coding 
 
-  - Create simple unit conversion program (Feet to Miles, Minutes to Days, Miles to Kilometer)
+  - Create simple unit conversion program (Celsius and Farenheight, Pounds and Ounces, Km and Miles)
 
 o Shall demonstrate basic understanding of Raspberry Pi I/O 
 
   - Configure LED on breadboard 
-  - Blink LED (Once every second)
-  - What color, what GPIO pin, what resistor? (Blue, Pin GPI026, 220 ohms)
+  - Blink LED (Turn on for one second, turn off for one second, 10 times)
+  - What color, what GPIO pin, what resistor? (Red, Pin GPI026, 220 ohms)
 
 o Shall demonstrate basic understanding of Pygame 
 
