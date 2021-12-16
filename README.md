@@ -22,6 +22,6 @@ o Shall demonstrate basic understanding of Raspberry Pi I/O
 
 o Shall demonstrate basic understanding of Pygame 
 
-  - Add a random rectangle to the center of the game screen (800px x 400px, black)
-  - Add random ball to the top-left corner of the game screen (20px, white)
-  - Add text to the top-right of the game screen (12px, white, arial)
+  - Add a random rectangle to the center of the game screen (800px by 500px, black)
+  - Add random ball to the top-left corner of the game screen (40px, white)
+  - Add text to the top-right of the game screen (72px, white, freesans)
