@@ -10,8 +10,7 @@ if decision == "Temp":
     elif unit == "c":
       c = int(input("Enter temperature in Celsius: "))
       f = (c*1.8)+32
-      print(f,"degrees Fahrenheit")
-        
+      print(f,"degrees Fahrenheit")      
 elif decision == "Distance":
   unit = input("What unit would you like to convert from? (km / miles): ")
   if unit == "km":
@@ -22,8 +21,6 @@ elif decision == "Distance":
     miles = int(input("Enter # of miles: "))
     km = miles * 1.609
     print(km,"kilometers")
- 
-    
 elif decision == "Weight":
   unit=input("What unit would you like to convert from? (lbs / ounces): ")
   if unit == "lbs":
@@ -35,7 +32,7 @@ elif decision == "Weight":
     lbs = ounces / 16
     print(lbs,"pounds")
     
-    
+   
     
 #BLINKING LED
  
@@ -52,4 +49,25 @@ for x in range(10):
     
     
 
-#Pygame example
+#PYGAME
+
+import pygame
+pygame.init()
+WHITE = (255, 255, 255)
+BLACk = (0 , 0 , 0)
+RED = (255, 0 , 0)
+GREEN = (0, 255, 0)
+BLUE = (0, 0, 255)
+pygame.idplay.set_mode ((scn_width, scn_height))
+screen.fill (BLACK)
+print(pygame.font.get_fonts())
+font = pygame.font.SysFont("freesans", 72)
+text = font.render("Pygame", True, BLACK)
+tw = text.get_width()
+th = text.get_height()
+screen_width = screen.get.width()
+screen_height = screen.get_height()
+screen.blit(text, [350,0])
+pygame.draw.rect(screen, WHITE, (250,200, 100, 50))
+pygame.draw.circle(screen, WHITE, [50,50], 40)
+pygame.disply.flip()
