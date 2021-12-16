@@ -58,7 +58,10 @@ BLACk = (0 , 0 , 0)
 RED = (255, 0 , 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
-pygame.idplay.set_mode ((scn_width, scn_height))
+pygame.display.set_mode ((scn_width, scn_height))
+scn_width = 800
+scn_height = 500
+screen = pygame.display.set.mode((scn_width, scn_height))
 screen.fill (BLACK)
 print(pygame.font.get_fonts())
 font = pygame.font.SysFont("freesans", 72)
